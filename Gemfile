@@ -11,4 +11,6 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
-gem "tzinfo-data"
+
+# Solo para Windows: evita error de zona horaria
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
