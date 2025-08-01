@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "minima"
+site_theme               : "cayman"
 title                    : "Alejandro Mahillo's Webpage"
 title_separator          : "-"
 name                     : &name "Alejandro Mahillo"
