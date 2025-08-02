@@ -1,0 +1,11 @@
+.sidebar {
+  position: relative;
+  height: auto;
+  overflow: visible;
+  z-index: 1000;
+}
+
+.footer {
+  clear: both;
+  z-index: 1;
+}

@@ -11,54 +11,42 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* 2021–Now: PhD in Mathematics, Universidad de Zaragoza, Spain.  
+  * Supervisors: Pedro J. Miana and Luciano Abadías.
+* 2020–2021: Master's in Mathematical Modeling and Research, Statistics and Computing, Universidad de La Rioja, Spain.
+* 2015–2020: Degree in Computer Science Engineering, Universidad de La Rioja, Logroño, Spain.
+* 2015–2019: Degree in Mathematics, Universidad de La Rioja, Logroño, Spain.
 
-Work experience
+Positions held
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2021–Now: PhD Candidate in Mathematics at Universidad de Zaragoza, Spain.  
+  * Predoctoral contract (formerly FPI).  
+  * Supervisors: Pedro J. Miana and Luciano Abadías.
+* 2020–2021: Substitute Teacher at Universidad de La Rioja, Spain.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Grants, honors and awards
+======
+* 2021–2025: Predoctoral contract (formerly FPI), Spanish Ministry of Science, Innovation and Universities.
+* 2021: University Academic Achievement Award in Computer Science Engineering, Gobierno de La Rioja.
+* 2020–2021: JAE Intro research grant, CSIC and Spanish Ministry of Science and Innovation.  
+  * Supervisor: David Martín de Diego.
+* 2020–2021: Collaboration grant, Spanish Ministry of Education.  
+  * Supervisor: Pedro J. Miana.
+* 2019: Extraordinary award for best academic record in Bachelor's degree.
+* 2018–2019: Best Bachelor's Thesis in Mathematics 2018–2019, Universidad de La Rioja and Royal Spanish Mathematical Society.
+* 2018–2019: International Mathematics Competition for University Students  
+  * Bronze medal (2019), Honorable mention (2018).
+* 2013: Amancio Ortega Foundation Grant.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Research Visits
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2024: Iowa State University (USA)  
+  * Research visit with Pablo Raúl Stinga (2 months).
+* 2024: Aristotle University of Thessaloniki (Greece)  
+  * Research visit with Aristomenis Siskakis (2 months).
 
-Publications
+Service
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* 2024–Now: Member of the Youth Commission, Spanish Royal Mathematical Society.
+* 2021–Now: Co-organizer of the Olympic Mathematics University Seminar, Universidad de Zaragoza.
+* 2020–2025: Organizer of the PhD Seminar IUMA, Universidad de Zaragoza.
