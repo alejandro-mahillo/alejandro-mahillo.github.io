@@ -13,7 +13,9 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
+  {%- comment -%}
   {% include sidebar.html %}
+  {%- endcomment -%}
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
