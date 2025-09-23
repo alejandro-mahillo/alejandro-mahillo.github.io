@@ -6,13 +6,18 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
 title                    : "Alejandro Mahillo's Webpage"
 title_separator          : "-"
 name                     : &name "Alejandro Mahillo"
-description              : &description "Postdoc at Universidad de Zaragoza"
+description              : &description "Assistant Professor at Universitat de València"
 url                      : https://alejandro-mahillo.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "alejandro-mahillo.github.io"
@@ -29,7 +34,7 @@ author:
   location         : "Valencia, Spain"
   employer         : "Universitat de València"
   uri              : # URL
-  email            : "almahill@unizar.es" 
+  email            : "alejandro.mahillo@uv.es" 
 
   # Academic websites
   academia         : # URL

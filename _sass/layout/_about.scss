@@ -1,0 +1,55 @@
+/* About page styles */
+.page {
+  @include breakpoint($large) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1200px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+
+.about-text {
+  padding-right: 2em;
+  
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+  }
+
+  .page__title {
+    margin-top: 0;
+  }
+}
+
+.about-image {
+  text-align: center;
+}
+
+.author__image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto 1em;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.author__bio {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: $text-color;
+}

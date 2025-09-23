@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+<style>
+.about-grid {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr !important;
+  gap: 2em;
+  padding: 1em;
+  max-width: 1200px;
+}
+
+.about-text {
+  grid-column: 1;
+  padding-right: 2em;
+}
+
+.about-image {
+  grid-column: 2;
+  text-align: center;
+}
+
+.about-image img.author__avatar {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50% !important;
+  margin: 0 auto 1em;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1em;
+  }
+  
+  .about-text, .about-image {
+    grid-column: 1;
+    padding-right: 0;
+  }
+  
+  .about-image img.author__avatar {
+    max-width: 250px;
+  }
+}
+</style>
+
+<div id="main" role="main">
+  <article class="page">
+    <div class="page__inner-wrap">
+      <div class="about-grid">
+        <div class="about-text">
+          <h1 class="page__title">{{ page.title }}</h1>
+          {{ content }}
+        </div>
+        
+        <div class="about-image">
+          <img src="/images/profile2.jpg" alt="{{ site.author.name }}" class="author__avatar">
+          {% if site.author.bio %}
+            <div class="author__bio">{{ site.author.bio }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

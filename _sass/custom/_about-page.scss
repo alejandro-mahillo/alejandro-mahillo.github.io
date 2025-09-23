@@ -1,0 +1,69 @@
+/* Custom About page styles */
+@import "../theme/default";
+
+.page {
+  .about-grid {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+    gap: 2em;
+    margin: 2em auto;
+    padding: 1em;
+    max-width: 1200px;
+  }
+
+  .about-text {
+    grid-column: 1;
+    padding-right: 2em;
+
+    .page__title {
+      margin-top: 0;
+      color: $darker-gray;
+    }
+  }
+
+  .about-image {
+    grid-column: 2;
+    text-align: center;
+    
+    img.author__avatar {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 50%;
+      margin: 0 auto 1em;
+      display: block;
+      object-fit: cover;
+      box-shadow: $box-shadow;
+    }
+
+    .author__bio {
+      color: $gray;
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .page {
+    .about-grid {
+      grid-template-columns: 1fr !important;
+      gap: 1em;
+    }
+    
+    .about-text {
+      grid-column: 1;
+      padding-right: 0;
+    }
+    
+    .about-image {
+      grid-column: 1;
+      margin: 1em 0;
+      
+      img.author__avatar {
+        max-width: 250px;
+      }
+    }
+  }
+}
