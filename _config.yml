@@ -30,11 +30,11 @@ author:
   avatar           : "profile2.jpg"
   name             : "Alejandro Mahillo"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoc Researcher"
-  location         : "Valencia, Spain"
-  employer         : "Universitat de València"
+  bio              : "Assistant Professor"
+  location         : "Santander, Spain"
+  employer         : "Universidad de Cantabria"
   uri              : # URL
-  email            : "alejandro.mahillo@uv.es" 
+  email            : "alejandro.mahillo@unican.es" 
 
   # Academic websites
   academia         : # URL
@@ -100,7 +100,7 @@ breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+talkmap_link             : true      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:

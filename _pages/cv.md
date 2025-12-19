@@ -21,9 +21,10 @@ redirect_from:
 
 # 💼 Positions Held
 
-- **2025 – Present** Assistant Professor, *Universitat de València*, Valencia, Spain
-- **2021 – 2025** Predoctoral contract (formerly FPI), *Universidad de Zaragoza*, Zaragoza, Spain  
-- **2020 – 2021** Substitute Teacher, *Universidad de La Rioja*, Logroño, Spain
+- **Nov 2025 – Present** Assistant Professor, *Universidad de Cantabria*, Santander, Spain
+- **Sep 2025 – Nov 2025** Assistant Professor, *Universitat de València*, Valencia, Spain
+- **Sep 2021 – Aug 2025** Predoctoral contract (formerly FPI), *Universidad de Zaragoza*, Zaragoza, Spain  
+- **Nov 2020 – Aug 2021** Substitute Teacher, *Universidad de La Rioja*, Logroño, Spain
 
 ---
 
