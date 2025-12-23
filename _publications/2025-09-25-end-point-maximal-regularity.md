@@ -13,8 +13,8 @@ citation: "Abadias, L., De León-Contreras, M., Mahillo, A. (2025). End-point ma
 In this paper, we study the end-point maximal regularity for the discrete parabolic Cauchy problem
 \\[
 \begin{cases}
-u'(t) + Au(t) = f(t), & t > 0, \\
-u(0) = 0,
+    u'(t) + Au(t) = f(t), & t > 0, \cr
+    u(0) = 0,
 \end{cases}
 \\]
 where $$-A$$ is the discrete Laplacian on the integers $$\mathbb{Z}$$. We consider the problem in the space $$\ell^1(\mathbb{Z})$$, representing the end-point case where the classical maximal regularity fails in the continuous setting.
