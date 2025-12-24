@@ -1,5 +1,5 @@
 ---
-title: "Generalized discrete Holder spaces."
+title: "Generalized discrete Holder spaces"
 collection: talks
 type: "Poster"
 permalink: /talks/2023-04-19-generalized-discrete-holder-spaces

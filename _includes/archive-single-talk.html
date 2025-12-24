@@ -7,29 +7,45 @@
 {% endif %}
 
 <div class="talk-item">
+  
   <div class="talk-meta-date">
     <span class="talk-date-year">{{ post.date | date: '%Y' }}</span>
     <span class="talk-date-month">{{ post.date | date: '%b %d' }}</span>
   </div>
 
   <div class="talk-content">
+    
     <h3 class="talk-title">
       {{ title }}
-      {% if post.type %}
-        <span class="talk-type-badge type-{{ post.type | downcase }}">
-          {{ post.type }}
-        </span>
-      {% endif %}
     </h3>
-    
+
+    {% if post.type %}
+      <div class="talk-tags-row" style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+        
+        <span class="talk-badge badge-{{ post.type | slugify | default: 'talk' }}">
+          {{ post.type | upcase }}
+        </span>
+
+        {% if post.type == "Seminar" and post.university %}
+          <span class="talk-uni" style="color: #444; font-weight: 600; font-size: 0.9em; display: inline-flex; align-items: center;">
+            <i class="fa fa-university" aria-hidden="true" style="margin-right:5px; color:#888;"></i> {{ post.university }}
+          </span>
+        {% endif %}
+
+      </div>
+    {% endif %}
+
     <div class="talk-venue-info">
+      
       {% if post.venue %}
         <span class="talk-venue">{{ post.venue }}</span>
       {% endif %}
+       
       {% if post.location %}
-        <span class="talk-separator">•</span>
+        {% if post.venue %}<span class="talk-separator">•</span>{% endif %}
         <span class="talk-location">{{ post.location }}</span>
       {% endif %}
+      
     </div>
   </div>
 </div>

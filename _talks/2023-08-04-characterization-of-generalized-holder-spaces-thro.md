@@ -1,5 +1,5 @@
 ---
-title: "Characterization of generalized Hölder spaces through semigroups associated with the discrete Laplacian."
+title: "Characterization of generalized Hölder spaces through semigroups associated with the discrete Laplacian"
 collection: talks
 type: "Talk"
 permalink: /talks/2023-08-04-characterization-of-generalized-holder-spaces-thro

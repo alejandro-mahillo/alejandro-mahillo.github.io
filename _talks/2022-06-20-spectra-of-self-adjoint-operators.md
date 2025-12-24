@@ -1,5 +1,5 @@
 ---
-title: "Spectra of self-adjoint operators generating semigroups that satisfy Gaussian estimates."
+title: "Spectra of self-adjoint operators generating semigroups that satisfy Gaussian estimates"
 collection: talks
 type: "Talk"
 permalink: /talks/2022-06-20-spectra-of-self-adjoint-operators

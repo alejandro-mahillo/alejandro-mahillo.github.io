@@ -1,5 +1,5 @@
 ---
-title: "Sequences in Banach Spaces and classes of operators."
+title: "Sequences in Banach Spaces and classes of operators"
 collection: talks
 type: "Talk"
 permalink: /talks/2020-03-06-sequences-in-banach-spaces-and-classes-of-operator

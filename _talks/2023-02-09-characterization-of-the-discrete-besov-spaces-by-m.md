@@ -1,5 +1,5 @@
 ---
-title: "Characterization of the discrete Besov spaces by means of semigroups associated to the discrete Laplacian."
+title: "Characterization of the discrete Besov spaces by means of semigroups associated to the discrete Laplacian"
 collection: talks
 type: "Talk"
 permalink: /talks/2023-02-09-characterization-of-the-discrete-besov-spaces-by-m

@@ -1,5 +1,5 @@
 ---
-title: "Una nueva condición mixta entre Ritt y Kreiss."
+title: "Una nueva condición mixta entre Ritt y Kreiss"
 collection: talks
 type: "Talk"
 permalink: /talks/2024-03-01-una-nueva-condicion-mixta-entre-ritt-y-kreiss

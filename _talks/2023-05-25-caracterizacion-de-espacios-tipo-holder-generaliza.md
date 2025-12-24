@@ -1,5 +1,5 @@
 ---
-title: "Caracterización de espacios tipo Hölder generalizados mediante semigrupos asociados al laplaciano discreto."
+title: "Caracterización de espacios tipo Hölder generalizados mediante semigrupos asociados al laplaciano discreto"
 collection: talks
 type: "Talk"
 permalink: /talks/2023-05-25-caracterizacion-de-espacios-tipo-holder-generaliza
