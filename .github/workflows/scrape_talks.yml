@@ -3,19 +3,21 @@ name: Scrape Talk Locations
 on:
   push:
     paths:
-      - '_talks/**'      # Si añades una charla nueva
-      - 'talkmap.py'     # Si modificas el script de python
-      - '.github/workflows/talkmap.yml' # Por si tocas este archivo
+      - '_talks/**'
+      - 'talkmap.py'
+      - '.github/workflows/scrape_talks.yml' # Fixed the filename here to match your uploaded file
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write 
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.9'
 
@@ -32,7 +34,6 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        # Aseguramos que se añada el archivo generado
         git add talkmap/org-locations.js
         git commit -m "Automated update of talk locations" || echo "No changes to commit"
         git push
