@@ -10,4 +10,5 @@ location: "Santander, Spain"
 
 ### Undergraduate Courses
 * **Numerical Analysis II** *Mathematics Degree, 3rd year.*
-
+* **Optimization I** *Mathematics Degree, 3rd year.*
+* **Mathematics III** *Maritime Engineering and Naval Architeture Degree, 2nd year.*
