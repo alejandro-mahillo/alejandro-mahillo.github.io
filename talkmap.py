@@ -30,7 +30,7 @@ MANUAL_FIXES = {
 }
 
 # Collect the Markdown files
-g = glob.glob("_talks/*.md")
+g = sorted(glob.glob("_talks/*.md"))
 
 # User Agent
 geocoder = Nominatim(user_agent="alejandro_mahillo_academic_map_v3") 
