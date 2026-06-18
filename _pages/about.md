@@ -2,6 +2,8 @@
 permalink: /
 title: "About me"
 layout: about
+description: "Assistant Professor at Universidad de Cantabria. Research interests in C₀-semigroup theory, functional calculus, and operator theory."
+katex: true
 redirect_from: 
   - /about/
   - /about.html

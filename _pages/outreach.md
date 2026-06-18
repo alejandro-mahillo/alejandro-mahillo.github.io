@@ -2,6 +2,7 @@
 layout: archive
 title: "Outreach and other activities"
 permalink: /outreach/
+description: "Outreach talks, workshops, and organization activities by Alejandro Mahillo for promoting mathematics."
 author_profile: true
 ---
 
@@ -20,8 +21,8 @@ author_profile: true
 
 ## Outreach organization
 
-* **2023**: Founder and participant of the Universidad de Zaragoza student outreach association 'Matemañicos'.
-* **2019**: Founder and participant of the Universidad de la Rioja student outreach association [Vaya Primos](https://www.gradosunirioja.es/vaya-primos-matematicas-para-todos).
+* **2023**: Founder and participant of the Universidad de Zaragoza student outreach association Matemañicos.
+* **2019**: Founder and participant of the Universidad de La Rioja student outreach association [Vaya Primos](https://www.gradosunirioja.es/vaya-primos-matematicas-para-todos).
 
 ## Media appearances
 

@@ -13,7 +13,7 @@ citation: "Abadias, L., De León-Contreras, M., Mahillo, A. (2025). End-point ma
 In this paper, we study the end-point maximal regularity for the discrete parabolic Cauchy problem
 \\[
 \begin{cases}
-    u'(t) + Au(t) = f(t), & t > 0, \cr
+    u^\prime(t) + Au(t) = f(t), & t > 0, \cr
     u(0) = 0,
 \end{cases}
 \\]

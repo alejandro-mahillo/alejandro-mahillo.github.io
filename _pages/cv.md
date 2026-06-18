@@ -2,6 +2,7 @@
 layout: archive
 title: "CV"
 permalink: /cv/
+description: "Academic CV of Alejandro Mahillo — education, positions, grants, research visits, and service."
 author_profile: true
 redirect_from:
   - /resume

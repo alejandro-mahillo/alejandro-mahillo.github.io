@@ -1,8 +1,15 @@
 {% include base_path %}
 
-{% if site.author.email or site.author.orcid or site.author.researchgate %}
+{% if site.author.email or site.author.orcid or site.author.researchgate or site.author.googlescholar %}
 <div class="page__footer-contact">
   <ul class="social-icons">
+    {% if site.author.googlescholar %}
+      <li>
+        <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+        </a>
+      </li>
+    {% endif %}
     {% if site.author.orcid %}
       <li>
         <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">
