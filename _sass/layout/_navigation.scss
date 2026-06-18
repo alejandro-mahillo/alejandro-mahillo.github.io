@@ -232,6 +232,14 @@
         justify-content: center;
         cursor: pointer;
       }
+
+      @media (max-width: 600px) {
+        margin-left: 0;
+
+        a {
+          margin-left: 0;
+        }
+      }
     }
 
     a {
