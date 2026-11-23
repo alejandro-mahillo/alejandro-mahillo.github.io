@@ -1,0 +1,24 @@
+<div id="map-container" class="talkmap-container">
+  <div id="map" role="region" aria-label="Talk locations"></div>
+</div>
+<p id="map-status" class="talkmap-status" role="status"></p>
+<noscript><p>The interactive map requires JavaScript. The full list of talks is below.</p></noscript>
+
+{% assign locations = site.talks | group_by: 'location' %}
+<template id="talk-map-locations">
+  {% for location in locations %}
+    {% assign coordinates = site.data.talk_locations[location.name] %}
+    {% if coordinates %}
+      <div class="talkmap-popup" data-location="{{ location.name | escape }}" data-lat="{{ coordinates[0] }}" data-lng="{{ coordinates[1] }}">
+        {% for talk in location.items %}
+          <div class="talkmap-popup-talk">
+            <b>{{ talk.title | escape }}</b><br>
+            <i>{{ talk.venue | escape }}</i><br>
+            <small>[{{ talk.type | default: 'Talk' | escape }}]</small>
+          </div>
+        {% endfor %}
+        <br><small><b>Location:</b> {{ location.name | escape }}</small>
+      </div>
+    {% endif %}
+  {% endfor %}
+</template>

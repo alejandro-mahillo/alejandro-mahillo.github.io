@@ -20,17 +20,44 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     transform: translateY(-2px);
   }
-
-  @media (max-width: 600px) {
-    height: 350px;
-  }
 }
 
-.talkmap-iframe {
-  width: 100%;
+.no-js .talkmap-container {
+  display: none;
+}
+
+#map {
   height: 100%;
-  border: none;
-  display: block;
+  color: #333;
+  color-scheme: light;
+}
+
+.talkmap-status:empty {
+  margin: 0;
+}
+
+.talkmap-popup {
+  min-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.talkmap-popup-talk {
+  margin-bottom: 8px;
+
+  & + & {
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+  }
+
+  i {
+    font-size: 0.9em;
+  }
+
+  small {
+    font-size: 0.8em;
+    color: #666;
+  }
 }
 
 

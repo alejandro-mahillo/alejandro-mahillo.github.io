@@ -7,16 +7,10 @@ layout: default
 {% endif %}
 
 {% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
+  {% include breadcrumbs.html %}
 {% endif %}
 
-<div id="main" role="main">
-  {%- comment -%}
-  {% include sidebar.html %}
-  {%- endcomment -%}
-
+<div id="main" role="main" tabindex="-1">
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 class="page__title">{{ page.title }}</h1>

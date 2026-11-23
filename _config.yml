@@ -37,45 +37,27 @@ breadcrumbs: false
 words_per_minute: 160
 future: true
 read_more: "disabled"
-talkmap_link: true
-
-comments:
-  provider: false
 
 google_site_verification: "s4qviia5_Nbj4ZIjxvyooXASGBkPQetooY0qSvB9Xwg"
 
-analytics:
-  provider: "false"
-
 include:
-  - .htaccess
   - _pages
   - files
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
+  - .agents
   - .bundle
   - .github
-  - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
+  - AGENTS.md
+  - docker-compose.yaml
   - Dockerfile
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
+  - Gemfile.lock
   - LICENSE
   - local
-  - log
   - node_modules
-  - package.json*
-  - Rakefile
-  - README
+  - README.md
+  - skills-lock.json
   - tmp
   - vendor
 keep_files:
@@ -93,6 +75,9 @@ incremental: false
 kramdown:
   input: GFM
   hard_wrap: false
+  gfm_quirks: [paragraph_end]
+  syntax_highlighter_opts:
+    default_lang: plaintext
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
@@ -105,9 +90,6 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -138,13 +120,6 @@ defaults:
       katex: true
   - scope:
       path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-  - scope:
-      path: ""
       type: talks
     values:
       layout: talk
@@ -156,19 +131,8 @@ timezone: Etc/UTC
 
 plugins:
   - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
-
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
 
 compress_html:
   clippings: all

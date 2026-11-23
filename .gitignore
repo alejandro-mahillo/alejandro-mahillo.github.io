@@ -18,3 +18,8 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Project-local agent skills are restored from skills-lock.json and dont include any skill information
+AGENTS.md
+skills-lock.json
+.agents/skills/

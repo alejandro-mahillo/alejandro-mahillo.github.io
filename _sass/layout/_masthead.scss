@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .masthead {
-  position: fixed;
+  position: sticky;
+  flex: none;
   background: var(--global-bg-color);
   height: fit-content;
   top: 0;
@@ -63,5 +64,9 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+
+    @media (max-width: 350px) {
+      padding-right: 0.5em;
+    }
   }
 }

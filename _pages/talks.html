@@ -11,18 +11,9 @@ map: true
   "Science is a collaborative journey. Visualizing where I have shared my research across the globe."
 </p>
 
-<div id="map-container" class="talkmap-container" style="height: 500px; width: 100%;">
-    <div id="map" style="height: 100%; width: 100%;"></div>
-</div>
-
-<script src="/talkmap/org-locations.js"></script>
-
-<script src="/talkmap/map-init.js"></script>
-
+{% include talk-map.html %}
 
 <hr style="margin: 3em 0;">
-
-{% assign talks_by_year = site.talks | sort: 'date' | reverse | group_by_exp: "talk", "talk.date | date: '%Y'" %}
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}

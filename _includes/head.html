@@ -10,13 +10,20 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  document.documentElement.classList.remove('no-js');
+  try {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'light' || theme === 'dark') {
+      document.documentElement.dataset.theme = theme;
+      document.querySelector('meta[name="color-scheme"]').content = theme;
+    }
+  } catch {}
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
-<!--<link rel="stylesheet" href="{{ base_path }}/assets/css/custom.css">-->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 <meta http-equiv="cleartype" content="on">

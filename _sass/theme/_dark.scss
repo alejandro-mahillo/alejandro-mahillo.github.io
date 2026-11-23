@@ -33,8 +33,7 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
-html[data-theme="dark"] {
+@mixin dark-theme-colors {
     --global-base-color                 : #{$background};
     --global-bg-color                   : #{$background};
     --global-footer-bg-color            : #{$background};
@@ -51,4 +50,15 @@ html[data-theme="dark"] {
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    @include dark-theme-colors;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme]) {
+        @include dark-theme-colors;
+    }
 }

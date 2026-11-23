@@ -47,6 +47,31 @@ The easiest way to preview changes locally is using Docker.
 
 The site auto-reloads when you make changes to any file (may take a few seconds).
 
+## Adding a talk to the map
+
+Add a Markdown entry to `_talks/`. If its `location` is already on the map, the
+talk appears automatically on the next Jekyll build. For a new location, add
+the exact same label to `_data/talk_locations.yml` with its `[latitude, longitude]`:
+
+```yaml
+"Santander, Spain": [43.4618932, -3.8100255]
+```
+
+Talks without a coordinate entry still appear in the list. The map uses
+[OpenStreetMap tiles](https://operations.osmfoundation.org/policies/tiles/) and
+does not need an API key.
+
+## Agent skills (optional)
+
+With Node.js 22.20 or later, restore the OpenCode skills listed in `AGENTS.md`
+and pinned in `skills-lock.json`:
+
+```bash
+npx skills install --agent opencode --frozen-lockfile
+```
+
+Node.js and the skills are not required to preview or deploy the site.
+
 ---
 
 ## Forking my site (or the template)
